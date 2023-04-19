@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <h1>Join a social network</h1>
+    <form enctype="multipart/form-data" method="POST">
+        <div class="input-row"><label>Full name: </label> <input name="fullName" id="fullName" required></div>
+        <div class="input-row"><label>Email address: </label> <input name="email" id="email" required></div>
+        <div class="input-row"><label>About you: </label> <textarea rows="4" cols="50" name="about" id="about"></textarea></div>
+        <div class="input-row"><label>Photo: </label><input type="file" id="picture" name="picture"></div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
