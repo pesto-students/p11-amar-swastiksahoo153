@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Message Creator</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <h1>Happy Birthday Message Creator</h1>
+    <form enctype="multipart/form-data" method="POST">
+        <div class="input-row"><label>Message: </label> <input name="message" id="message" required></div>
+        <div class="input-row"><label>Email address: </label> <input name="email" id="email" pattern="[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" placeholder="name@domain.com" required></div>
+        <div class="input-row"><label>Date to send: </label> <input name="date" id="date" type="date" required></div>
+        <div class="input-row"><label>Message color: </label><input type="color" id="message-color" name="message-color"></div>
+        <div class="input-row"><label>Number of blinks: </label> <input name="blinks" id="blinks" type="number" min="0" max="10" value="0" required></div>
+        <div class="input-row"><label>Music volume: </label> <input type="range" min="0" max="50" value="20" class="slider" id="volume" name="value"></div>
+        <button>Send Birthday Message</button>
+    </form>
+</body>
+</html>

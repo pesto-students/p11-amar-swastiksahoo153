@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting Lineup</title>
+</head>
+<body>
+    <h1>Starting Lineup</h1>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Status:</legend>
+            <input type="radio" id="draft" name="status" value="Draft">
+            <label >Draft</label>
+            <input type="radio" id="final" name="status" value="Final" checked>
+            <label >Final</label>
+        </fieldset>
+        <div style="margin: 1rem 0;">
+            <label>Date: </label>
+            <select name="gameDate" >
+                <option name="player" value="March 20">March 20</option>
+                <option name="player" value="March 24">March 24</option>
+                <option name="player" value="April 2">April 2</option>
+                <option name="player" value="April 6">April 6</option>
+                <option name="player" value="April 13">April 13</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>Players:</legend>
+            <input type="checkbox" id="draft" name="draft" value="draft">
+            <label >Aarav Agarwal</label><br />
+            <input type="checkbox" id="draft" name="draft" value="draft">
+            <label >Ava Johnson</label><br />
+            <input type="checkbox" id="draft" name="draft" value="draft">
+            <label >Julio Ortiz</label><br />
+            <input type="checkbox" id="draft" name="draft" value="draft">
+            <label >Liam Rubio</label><br />
+            <input type="checkbox" id="draft" name="draft" value="draft">
+            <label >Emma Witherspoon</label><br />
+        </fieldset>
+        <br/>
+        <input type="submit">
+       </form>
+</body>
+</html>
